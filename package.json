@@ -1,0 +1,23 @@
+{
+  "name": "simple-vdom",
+  "version": "1.0.0",
+  "description": "简化版虚拟dom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WxSwen/simple-vdom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WxSwen/simple-vdom/issues"
+  },
+  "homepage": "https://github.com/WxSwen/simple-vdom#readme",
+  "dependencies": {
+    "snabbdom": "^0.7.1",
+    "snabbdom-to-html": "^5.1.0"
+  }
+}
