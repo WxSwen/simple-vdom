@@ -1,4 +1,4 @@
-function styleModule(vnode, attributes) {
+module.exports = function styleModule(vnode, attributes) {
   var values = [];
   var style = vnode.data.style || {};
 
@@ -13,4 +13,4 @@ function styleModule(vnode, attributes) {
   }
 }
 
-styleModule({data:{ style: { 'color': 'red', 'width': '100px' } }}, null);
+// styleModule({data:{ style: { 'color': 'red', 'width': '100px' } }}, null);

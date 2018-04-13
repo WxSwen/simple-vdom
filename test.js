@@ -2,7 +2,7 @@ var h = require('snabbdom/h').h
 var toHTML = require('snabbdom-to-html')
 
 var output = toHTML(
-  h('div', { style: { '--color': 'red' } , props: { className: '10px' }}, 'The quick brown fox jumps')
+  h('div', { style: { '--color': 'red' } , props: { className: '10px' }, attrs: { 'className': '1rpx'}}, 'The quick brown fox jumps')
 )
 
 console.log(output)

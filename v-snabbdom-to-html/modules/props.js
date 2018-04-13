@@ -28,7 +28,7 @@ var omit = [
   'tagName'
 ]
 
-function propsModule(vnode, attributes) {
+module.exports = function propsModule(vnode, attributes) {
   let props = vnode.data.props || {};
 
   Object.keys(props).forEach(key => {
@@ -37,9 +37,8 @@ function propsModule(vnode, attributes) {
     }
     let _key = key === 'htmlFor' ? 'for' : (key === 'className' ? 'class' : key);
 
-    console.log(_key , props[key]);
     attributes.set(_key.toLowerCase(), props[key]);
   })
 }
 
-propsModule({ data: { style: { '--color': 'red' } , props: { className: '10px' }}}, null)
+// propsModule({ data: { style: { '--color': 'red' } , props: { className: '10px' }}}, null)

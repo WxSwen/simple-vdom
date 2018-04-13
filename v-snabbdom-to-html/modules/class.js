@@ -1,4 +1,4 @@
-function classModule(vnode, attributes){
+module.exports = function classModule(vnode, attributes){
   let _add = [];
   let _remove = [];
   let existing = attributes.get('class');
@@ -12,4 +12,4 @@ function classModule(vnode, attributes){
   values.length && attributes.set('class', values.join(' ')) 
 }
 
-classModule({ data: { class: { 'v-dom': true, 'y-dom': false, 'z-dom': true}}})
+// classModule({ data: { class: { 'v-dom': true, 'y-dom': false, 'z-dom': true}}})
